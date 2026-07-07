@@ -40,7 +40,6 @@ video{
 
 <video
 autoplay
-muted
 playsinline
 loop
 preload="auto">
@@ -49,6 +48,14 @@ preload="auto">
 Tu navegador no soporta video.
 
 </video>
+<script>
+const video = document.querySelector("video");
 
+video.muted = false;
+
+video.play().catch(() => {
+    console.log("El navegador bloqueó el sonido automático.");
+});
+</script>
 </body>
-</html>
+</html>    
