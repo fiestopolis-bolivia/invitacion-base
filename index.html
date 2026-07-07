@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
@@ -42,20 +43,15 @@ video{
 autoplay
 playsinline
 loop
-preload="auto">
+preload="auto"
+controls>
 
 <source src="loney_1.mp4" type="video/mp4">
+
 Tu navegador no soporta video.
 
 </video>
-<script>
-const video = document.querySelector("video");
 
-video.muted = false;
-
-video.play().catch(() => {
-    console.log("El navegador bloqueó el sonido automático.");
-});
-</script>
 </body>
+
 </html>    
